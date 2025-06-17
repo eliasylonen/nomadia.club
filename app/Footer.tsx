@@ -11,9 +11,9 @@ const FooterLink = ({
 );
 
 export const Footer = () => (
-  <footer className="flex items-center justify-center bg-zinc-100 h-6 text-zinc-700 text-xs">
-    <div className="flex-1 px-4 max-w-4xl">
-      © 2025&nbsp;
+  <footer className="flex items-center justify-center h-6 text-zinc-700 text-xs">
+    <div className="flex-1 px-4 max-w-2xl">
+      Built by&nbsp;
       <FooterLink href="https://www.linkedin.com/in/eliasylonen">
         Elias Ylönen
       </FooterLink>
