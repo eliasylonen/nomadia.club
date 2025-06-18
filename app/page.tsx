@@ -66,11 +66,11 @@ export default function Home() {
           </div>
           <div className="max-w-2xl overflow-x-auto flex snap-x snap-mandatory scrollbar-hidden py-5 scrollbar-hide">
             {[
-              "/images/pula-1.webp",
+              "/images/pula-1.avif",
               "/images/pula-2.avif",
               "/images/pula-3.avif",
               "/images/pula-4.avif",
-              "/images/pula-5.avif",
+              "/images/pula-5.webp",
             ].map((src, index) => (
               <div key={index} className="snap-start pl-5 shrink-0 last:pr-5">
                 <Image
