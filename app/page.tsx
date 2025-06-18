@@ -75,7 +75,7 @@ export default function Home() {
               <div key={index} className="snap-start pl-5 shrink-0 last:pr-5">
                 <Image
                   src={src}
-                  alt={`Pula image ${index + 1}`}
+                  alt={`nomadia.club stay in Pula ${index + 1}`}
                   width={240}
                   height={240}
                   className="h-64 w-64 object-cover"
