@@ -24,16 +24,16 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center">
         <section>
           <div className="max-w-2xl px-5">
-            <P>Hi, I'm Elias!</P>
+            <P>Hi, we are Katarina and Elias!</P>
             <Image
               className="mb-5 object-cover overflow-hidden w-64 h-64"
-              src="/images/elias.jpg"
-              width={256}
-              height={256}
-              alt="Elias Ylönen in Chicago"
+              src="/images/katarina-elias.jpeg"
+              width={1024}
+              height={1024}
+              alt="Katarina and Elias"
             />
             <P>
-              I host <b>weekend getaways for</b> the most{" "}
+              We organize <b>weekend getaways for</b> the most{" "}
               <b>kind and driven people</b>.
             </P>
             <P>
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
           <div className="max-w-2xl px-5 pb-16">
             <P>
-              If you'd like to join, text me! Good ideas and questions also
+              If you'd like to join, text us! Good ideas and questions also
               always welcome.
             </P>
             <WhatsAppButton />
