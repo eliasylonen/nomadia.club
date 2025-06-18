@@ -33,7 +33,7 @@ export default function Home() {
               alt="Elias Ylönen in Chicago"
             />
             <P>
-              I host workation <b>trips for</b> the most{" "}
+              I host <b>weekend getaways for</b> the most{" "}
               <b>kind and driven people</b>.
             </P>
             <P>
