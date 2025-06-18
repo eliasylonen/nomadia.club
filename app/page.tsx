@@ -64,7 +64,7 @@ export default function Home() {
               <li>- No schedule and full freedom to relax and work</li>
             </ul>
           </div>
-          <div className="overflow-x-auto flex snap-x snap-mandatory py-5 scrollbar-hide">
+          <div className="max-w-2xl overflow-x-auto flex snap-x snap-mandatory scrollbar-hidden py-5 scrollbar-hide">
             {[
               "/images/pula-1.webp",
               "/images/pula-2.avif",
