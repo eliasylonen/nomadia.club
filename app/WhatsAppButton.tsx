@@ -3,7 +3,7 @@ export const WhatsAppButton = () => (
     href={`https://wa.me/358443309779?text=${encodeURIComponent("Hi Elias!")}`}
     target="_blank"
     rel="noopener noreferrer"
-    className="w-min transition-colors text-[#25D366] hover:text-[#22C867]"
+    className="w-min transition-colors text-[#25D366] hover:text-[#22C867] active:scale-95"
   >
     <svg width="160" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect width="160" height="36" rx="8" fill="currentColor" />
