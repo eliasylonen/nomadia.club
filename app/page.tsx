@@ -27,7 +27,7 @@ export default function Home() {
           <div className="max-w-2xl px-5">
             <P>Hi, we are Katarina and Elias!</P>
             <Image
-              className="mb-5 object-cover overflow-hidden w-64 h-64 brightness-125"
+              className="mb-16 object-cover overflow-hidden w-64 h-64 brightness-125"
               src="/images/katarina-elias.jpeg"
               width={1024}
               height={1024}
