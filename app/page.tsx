@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="flex flex-col font-[family-name:var(--font-ibm-plex-sans)] min-h-screen text-zinc-800">
       <header className="flex-1 flex justify-center">
-        <div className="flex-1 flex items-center max-w-2xl px-5 h-32">
+        <div className="flex-1 flex items-center max-w-2xl px-5 py-16">
           <Link href={"/"} className="active:scale-95">
             nomadia.club
           </Link>
@@ -27,7 +27,7 @@ export default function Home() {
           <div className="max-w-2xl px-5">
             <P>Hi, we are Katarina and Elias!</P>
             <Image
-              className="mb-5 object-cover overflow-hidden w-64 h-64"
+              className="mb-5 object-cover overflow-hidden w-64 h-64 brightness-125"
               src="/images/katarina-elias.jpeg"
               width={1024}
               height={1024}
@@ -98,7 +98,7 @@ export default function Home() {
             ]}
             airbnbUrl="https://www.airbnb.com/rooms/1117843720221559249"
           />
-          <div className="max-w-2xl px-5 pt-5 pb-16">
+          <div className="max-w-2xl px-5 py-16">
             <P>
               If you'd like to join, text us! Good ideas and questions also
               always welcome.
