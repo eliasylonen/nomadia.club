@@ -35,7 +35,7 @@ export default function Home() {
             />
             <P>
               We organize <b>weekend getaways for</b> the most{" "}
-              <b>kind and driven people</b>.
+              <b>kind and driven couples</b>.
             </P>
             <P>
               The next trip will be an extended weekend in Pula, Croatia from{" "}
