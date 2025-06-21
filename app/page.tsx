@@ -3,6 +3,7 @@ import { Footer } from "./Footer";
 import { WhatsAppButton } from "./WhatsAppButton";
 import Image from "next/image";
 import Link from "next/link";
+import { HouseListing } from "./HouseListing";
 
 const P = ({
   children,
@@ -64,26 +65,40 @@ export default function Home() {
               <li>- No schedule and full freedom to relax and work</li>
             </ul>
           </div>
-          <div className="max-w-2xl overflow-x-auto flex snap-x snap-mandatory scrollbar-hidden py-5 scrollbar-hide">
-            {[
+          <HouseListing
+            title="House 1"
+            imageUrls={[
               "/images/pula-1.avif",
               "/images/pula-2.avif",
               "/images/pula-3.avif",
               "/images/pula-4.avif",
               "/images/pula-5.webp",
-            ].map((src, index) => (
-              <div key={index} className="snap-start pl-5 shrink-0 last:pr-5">
-                <Image
-                  src={src}
-                  alt={`nomadia.club stay in Pula ${index + 1}`}
-                  width={240}
-                  height={240}
-                  className="h-64 w-64 object-cover"
-                />
-              </div>
-            ))}
-          </div>
-          <div className="max-w-2xl px-5 pb-16">
+            ]}
+            airbnbUrl="https://www.airbnb.com/rooms/35764680"
+            isFull
+          />
+          <HouseListing
+            title="House 2"
+            imageUrls={[
+              "/images/pula-house-2-image-1.jpeg",
+              "/images/pula-house-2-image-2.avif",
+              "/images/pula-house-2-image-3.avif",
+              "/images/pula-house-2-image-4.avif",
+              "/images/pula-house-2-image-5.avif",
+            ]}
+            airbnbUrl="https://www.airbnb.com/rooms/22040548"
+          />
+          <HouseListing
+            title="Glamping"
+            imageUrls={[
+              "/images/pula-glamping-1.jpeg",
+              "/images/pula-glamping-2.avif",
+              "/images/pula-glamping-3.avif",
+              "/images/pula-glamping-4.avif",
+            ]}
+            airbnbUrl="https://www.airbnb.com/rooms/1117843720221559249"
+          />
+          <div className="max-w-2xl px-5 pt-5 pb-16">
             <P>
               If you'd like to join, text us! Good ideas and questions also
               always welcome.
