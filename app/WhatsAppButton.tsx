@@ -3,7 +3,7 @@
 import { sendGAEvent } from "@next/third-parties/google";
 
 const trackConversion = async () => {
-  sendGAEvent("whatsapp_button_clicked");
+  sendGAEvent("whatsapp_button_clicked", "buttonClicked", {});
 };
 
 export const WhatsAppButton = () => (
