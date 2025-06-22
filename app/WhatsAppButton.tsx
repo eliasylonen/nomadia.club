@@ -1,21 +1,9 @@
 "use client";
 
 import { sendGAEvent } from "@next/third-parties/google";
-import { trackMetaConversion } from "./actions";
 
 const trackConversion = async () => {
-  sendGAEvent("whatsapp_button_clicked", "buttonClicked", {});
-
-  const fbp = document.cookie
-    .split(";")
-    .find((c) => c.trim().startsWith("_fbp="))
-    ?.split("=")[1];
-  const fbc = document.cookie
-    .split(";")
-    .find((c) => c.trim().startsWith("_fbc="))
-    ?.split("=")[1];
-
-  await trackMetaConversion(fbp, fbc);
+  sendGAEvent("whatsapp_button_clicked");
 };
 
 export const WhatsAppButton = () => (
