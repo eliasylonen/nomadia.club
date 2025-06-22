@@ -17,6 +17,14 @@ export default function Home() {
     <div className="flex flex-col font-[family-name:var(--font-ibm-plex-sans)] min-h-screen text-zinc-800">
       <header className="flex-1 flex justify-center">
         <div className="flex-1 flex items-center max-w-2xl px-5 py-16">
+          <Image
+            className="w-4 -mb-[1px] mr-1"
+            alt="nomadia.club logo"
+            src="/images/nomadia-club-logo.png"
+            width={128}
+            height={128}
+            priority
+          />
           <Link href={"/"} className="active:scale-95">
             nomadia.club
           </Link>
