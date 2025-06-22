@@ -1,8 +1,29 @@
+"use client";
+
+import { sendGAEvent } from "@next/third-parties/google";
+import { trackMetaConversion } from "./actions";
+
+const trackConversion = async () => {
+  sendGAEvent("whatsapp_button_clicked", "buttonClicked", {});
+
+  const fbp = document.cookie
+    .split(";")
+    .find((c) => c.trim().startsWith("_fbp="))
+    ?.split("=")[1];
+  const fbc = document.cookie
+    .split(";")
+    .find((c) => c.trim().startsWith("_fbc="))
+    ?.split("=")[1];
+
+  await trackMetaConversion(fbp, fbc);
+};
+
 export const WhatsAppButton = () => (
   <a
     href={`https://wa.me/358443309779?text=${encodeURIComponent("Hi Elias!")}`}
     target="_blank"
     rel="noopener noreferrer"
+    onClick={trackConversion}
     className="w-min transition-colors text-[#25D366] hover:text-[#22C867] active:scale-95"
   >
     <svg width="160" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
